@@ -1,0 +1,144 @@
+var inventario = []
+var pontos= 100;
+ 
+ 
+function iniciarJogo() {
+  alert("Welcome(Bem Vindo) Yahya Al Ghotany! Alguns anos atrás aconteceu uma triste guerra em seu país, atualmente seu sonho é chegar nas olimpiadas lutando taekwondo. Para chegar até as olimpiadas você deve alcançar uma quantidade especifica de pontos, você já contém 100 pontos, Boa sorte!");
+  let acao = Number(prompt("Você esta treinando e o seu treinador pede para desafiar o mais forte da academia, o que você faz?/.\n 1) desafia-lo \n 2)recusar "));
+if (acao == "2"){
+  alert("Você perdeu moral com o seu treinador")
+  inventario.push("Insegurança")
+  alert("Seus pontos é de: " + pontos + "Adiquiriu Insegurança" + "Seu inventario é: "+ inventario)
+}
+if (acao == "1") {
+  alert("Você aceitou desafiar o mais forte, assim você obteve mais 100 pontos")
+  pontos = pontos + 100
+  inventario.push("Coragem")
+  alert("Seus pontos é de: " + pontos + "Obteve Coragem" + "Seu inventario é: "+ inventario)
+}
+}
+function iniciarjogo(){
+  alert("Após muitos meses de treino você finalmente foi convocado para o seu primeiro campeonato armador, se ganha-lo você partipa de um campeonato classificatório para a olipiadas");
+  let acao = Number(prompt("Você deseja participar deste campeonato?\n 1) Sim \n 2) Não(jogo encerrara) "));
+if (acao == "2"){
+alert("Jogo encerrado, até mais!")
+}
+if (acao == "1"){
+alert("Você aceitou participar do campeonato, Boa sorte para ganhar o campeonato!!")
+pontos = pontos + 100
+inventario.push("Destemido")
+alert("Seus pontos é de: " + pontos + "  Adiquiriu destemido" + " Seu inventario é: "+ inventario)
+}
+
+}
+ 
+function Iniciarjogo(){
+alert("Passaram-se as duas lutas iniciais e  você ganhou as duas, Parabéns!!,Na próximo luta você está entrando no tatame e se depara que o seu adversário é o último campeão, então você entra com mais foco para poder derrota-lo, você relembra do seu passado como refugiado, então pensa em fazer o golpe mais dificil do taekwondo para garantir a vitória, então você:")
+let acao = Number(prompt("O que você deseja fazer? \n 1) Aplica o golpe mais dificil, lesiona o seu adversário e ganha a luta \n 2) Você faz uma bola luta, mas ganha com um erro de arbitragem, faznedo assim todos duvidarem do seu potencial para chegar a olimpiadas Paris 2024."));
+if(acao == "2"){
+alert("Você ganha a luta por um erro de arbitragem, assim fazendo todos duvidarem do seu potencial como lutador de taekwondo, mas não lesiona o seu adversário.")
+inventario.push("Honestidade")
+alert("Seus pontos é de: " + pontos + "  adquiriu Honestidade" + " Seu inventario é: "+ inventario)
+}
+if(acao == "1"){
+    alert("Você ganhou a luta, e além da luta ganhou muita mais visibilidade para se classificar-se para a olimpiadas, classificou-se para a semifinal mas lesionou o outro lutador.")
+    pontos = pontos + 100
+    inventario.push("Desonestidade")
+alert("Seus pontos é de: " + pontos + "  adiquiriu desonestidade" + " Seu inventario é: "+ inventario)
+}
+}  
+
+ 
+function iniciarjogO(){
+alert("Agora você chegou na semifinal, nesta fase do campeonato é quando a midia começa a dar mais visibilidade para os lutadores, ou seja, classificando para a final você ganhará muita midia, fazendo assim você se destacar entre os outros lutadores, consequentemento sendo um dos favoritos para o próximo campeonato(qualificatórias para as olimpiadas de Paris 2024). Se prepare a semifinal ela iniciara em alguns minutos, Boa sorte!.")
+let acao = Number(prompt("Chegou a luta mais esperada, se perder está eliminado, o que você deseja fazer? \n 1)Realize uma série de aquecimentos pesados para fazer um bom preparo para a luta.  \n 2)Pratique respirações profundas, entrando em sua mente, afastando a ansiedade e mantendo a calma para a luta,"));
+if(acao == "2"){
+alert("Você manteve o controle para luta.")
+inventario.push("Serenidade")
+pontos = pontos + 100
+alert("Seus pontos é de: " + pontos + "  adquiriu Serenidade" + " Seu inventario é: "+ inventario)
+
+
+
+}
+if(acao == "1"){
+  alert("Você se machucou fazendo uma série pesada de alongamentos, terá que lutar machucado.")
+  inventario.push("Nervosismo")
+  alert("Seus pontos é de: " + pontos + "  adquiriu Nervosismo" + " Seu inventario é: "+ inventario)
+}
+}
+
+
+
+function iNiciarjogo(){
+  alert("Você está no meio da luta enquanto sente dor no joelho, mas arrisca o golpe da cobra(o mesmo do karetekid).")
+  let acao = Number(prompt("O que você deseja fazer? \n 1) Fazer o golpe da cobra e ganhar a luta mas se manter machucado para a final \n 2)Não fazer o golpe da cobra, ganhar a luta mas terá uma menor visibilidade para poder participar do campeonato classficatório para Paris 2024, e ter uma melhor recuperação para a final."));
+if(acao == "2"){
+  alert("Média escolha, pelo menos se recupera para a final")
+  inventario.push("ousado")
+  alert("Seus pontos é de: " + pontos + "  adquiriu Destemido" + " Seu inventario é: "+ inventario)
+}
+  if(acao == "1"){
+    alert("Boa escolha, mas lutará machucado na final.")
+    pontos = pontos + 100
+    inventario.push("Força")
+    alert("Seus pontos é de: " + pontos + "  adquiriu Força" + " Seu inventario é: "+ inventario)
+  }
+
+}
+
+function iniciArjogo(){
+alert("Boa!, Você chegou na final do campeonato amador, seu adversário é um novato, mas ele eliminou todos como você, não desperdice a chance de participar do campeonato classificatório para a olimpiadas.")
+let acao = Number(prompt("O seu adversário mesmo sendo novato realmente é muito bom, O que você deseja fazer? \n 1)Acabar com a luta de uma vez, com um golpe lesionando o adversário, ganhando mais moral no mundo do taekwondo e classificando-se para o campeonato classificatório de Paris 2024.  \n 2)Ganhar a luta, não lesionando o adversário, classificar-se para o campeonato classificatório de Paris 2024, mas mantendo o pé no chão e sem muita midia. ."));
+if(acao == "2"){
+  alert("Boa escolha!, sempre utilize o coração e nessa escolha você demonstrou que tem um bom coração")
+  pontos = pontos + 100
+inventario.push("compassividade")
+alert("Seus pontos é de: " + pontos + "  adquiriu compassividade" + " Seu inventario é: "+ inventario)
+}
+if(acao == "1"){
+alert("Péssima escolha, você classificou-se para o campeonato classificatório para as olimpiadas Paris 2024, mas não do jeito certo, repense nas próximas lutas.")
+inventario.push("Insensivel")
+alert("Seus pontos é de: " + pontos + "  adquiriu insensivel" + " Seu inventario é: "+ inventario)
+}
+
+}
+
+function iniciarjOgo(){
+alert("Depois de ganhar o campeonato amador, você decide voltar para a Síria o país que você teve que abandonar para se tornar refugiado, lá você percebe que está em uma situação muito ruim, então decide criar um centro de treinamento na Jordânia para as criançãs refugiadas da Síria que desejam evoluir como ser humano, pois o taekwondo se torna-ra uma distração para problemas muitos maiores para essas crianças refugiadas.")
+let acao = Number(prompt(" O que você deseja fazer? \n 1)Gastar muito dinheiro para investir em um centro de treinamento, fazendo assim podendo focar bastante para chegar as olimpiadas Paris 2024.  \n 2)Treinar você mesmo as crianças, fazendo assim um bom convivio com as pessoas que estão passando pelo o que você também passou, mas fazendo assim um foco a menos para chegar as olimpiadas Paris 2024."));
+if(acao == "2"){
+  alert("Uma boa escolha para o coração, mas uma escolha não tão boa para os seus objetivos futuros(olimpiadas).")
+  pontos = pontos + 70
+  inventario.push("Irmandade")
+  alert("Seus pontos é de: " + pontos + "  adquiriu irmandade" + " Seu inventario é: "+ inventario)
+}
+  if(acao == "1"){
+  alert("Você e seus amigo e familiares irão ter que trabalhar muito mas pelo menos você vai conseguir focar mais no seu objetivo")
+  pontos = pontos + 70
+  inventario.push("Determinação")
+  alert("Seus pontos é de: " + pontos + "  adquiriu derteminação" + " Seu inventario é: "+ inventario)
+}
+
+}
+
+
+
+
+
+
+
+
+function iniciarJOgo(){
+alert("Depois de muito tempo passado na Jordânia, você recebe uma carta da olimpiadas Paris 2024, nela está escrito, (Parabéns Yahya Al Ghotany!, por todo o seu esforço durante o campeonato amador, e por todo o seu esforço ajudando as pessoas refugiadas da Síria, nós representantes da Olimpiadas Paris 2024, estamos convidando-o para representar o povo refugiado nas Olimpiadas 2024, assim você está diretamente classificado para as Olimpiadas Paris 2024, você não precisa participar do campeonato qualificatório, parabéns!A gente percebeu que você está sem tempo para treinar então como você é uma ÓTIMA pessoa nós decidimos fazer este chamado para você, então parabéns mais uma fez, pois você fez valer a pena o convite!)")
+pontos = pontos + 1000
+}
+iniciarJogo()
+iniciarjogo()
+Iniciarjogo()
+iniciarjogO()
+iNiciarjogo()
+iniciArjogo()
+iniciarjOgo()
+
+iniciarJOgo()
